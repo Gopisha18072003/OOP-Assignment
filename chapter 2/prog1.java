@@ -19,7 +19,7 @@ class VOperations
     }
     boolean binarySearch(int se)
     {
-        int h=0, l=Arr.length-1, m;
+        int l=0, h=Arr.length-1, m;
         while(l<=h)
         {
             m = (l+h)/2;
@@ -69,11 +69,11 @@ public class prog1 {
         System.out.println("Is 12 present in the array: " + v.linearSearch(12));
         System.out.println("Is 442 present in the array: " + v.linearSearch(442));
         System.out.println("Binary Search-");
-        System.out.println("Is 12 present in the array: " + v.binarySearch(12));
-        System.out.println("Is 442 present in the array: " + v.binarySearch(442));
         System.out.println("Array after sorting: ");
         v.bubbleSort();
         v.show();
+        System.out.println("Is 12 present in the array: " + v.binarySearch(12));
+        System.out.println("Is 442 present in the array: " + v.binarySearch(442));
 
     }
 }
